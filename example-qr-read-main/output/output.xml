@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230917 02:08:01.741" rpa="true" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230918 18:26:32.621" rpa="true" schemaversion="3">
 <suite id="s1" name="Tasks" source="D:\arief\training\robocorp\sources\robocorp\example-qr-read-main\tasks.robot">
 <test id="s1-t1" name="Minimal task" line="8">
 <kw name="Read Qrcode From Image" library="qrreader">
 <var>${data_from_qr}</var>
 <arg>devdata${/}qr-link.png</arg>
 <doc>Reads imagefile and returns list of decoded data</doc>
-<msg timestamp="20230917 02:08:02.043" level="INFO">${data_from_qr} = [Decoded(data=b'https://github.com/NaturalHistoryMuseum/pyzbar', type='QRCODE', rect=Rect(left=50, top=50, width=330, height=330), polygon=[Point(x=50, y=50), Point(x=50, y=379), Point(x=380, y=380), ...</msg>
-<status status="PASS" starttime="20230917 02:08:01.923" endtime="20230917 02:08:02.044"/>
+<msg timestamp="20230918 18:26:33.522" level="INFO">${data_from_qr} = [Decoded(data=b'https://github.com/NaturalHistoryMuseum/pyzbar', type='QRCODE', rect=Rect(left=50, top=50, width=330, height=330), polygon=[Point(x=50, y=50), Point(x=50, y=379), Point(x=380, y=380), ...</msg>
+<status status="PASS" starttime="20230918 18:26:33.370" endtime="20230918 18:26:33.527"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${data_from_qr}</arg>
 <arg>console=true</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230917 02:08:02.046" level="INFO">[Decoded(data=b'https://github.com/NaturalHistoryMuseum/pyzbar', type='QRCODE', rect=Rect(left=50, top=50, width=330, height=330), polygon=[Point(x=50, y=50), Point(x=50, y=379), Point(x=380, y=380), Point(x=379, y=50)], quality=1, orientation='UP')]</msg>
-<status status="PASS" starttime="20230917 02:08:02.045" endtime="20230917 02:08:02.046"/>
+<msg timestamp="20230918 18:26:33.530" level="INFO">[Decoded(data=b'https://github.com/NaturalHistoryMuseum/pyzbar', type='QRCODE', rect=Rect(left=50, top=50, width=330, height=330), polygon=[Point(x=50, y=50), Point(x=50, y=379), Point(x=380, y=380), Point(x=379, y=50)], quality=1, orientation='UP')]</msg>
+<status status="PASS" starttime="20230918 18:26:33.528" endtime="20230918 18:26:33.532"/>
 </kw>
-<status status="PASS" starttime="20230917 02:08:01.921" endtime="20230917 02:08:02.047"/>
+<status status="PASS" starttime="20230918 18:26:33.367" endtime="20230918 18:26:33.575"/>
 </test>
 <doc>Reads QR code image from file. Logs output</doc>
-<status status="PASS" starttime="20230917 02:08:01.744" endtime="20230917 02:08:02.049"/>
+<status status="PASS" starttime="20230918 18:26:32.628" endtime="20230918 18:26:33.577"/>
 </suite>
 <statistics>
 <total>
