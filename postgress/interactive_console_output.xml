@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20230917 01:48:43.588" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Arief\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Connect To Database">
+<arg>${driver}</arg>
+<arg>${database}</arg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<arg>${server}</arg>
+<arg>${port}</arg>
+<msg timestamp="20230917 01:48:44.478" level="FAIL">No keyword with name 'Connect To Database' found.</msg>
+<status status="FAIL" starttime="20230917 01:48:44.478" endtime="20230917 01:48:44.478"/>
+</kw>
+<kw name="Query">
+<var>@{rows}</var>
+<arg>SELECT * FROM komunitas;</arg>
+<status status="NOT RUN" starttime="20230917 01:48:44.479" endtime="20230917 01:48:44.479"/>
+</kw>
+<for flavor="IN">
+<var>${row}</var>
+<value>@{rows}</value>
+<iter>
+<var name="${row}"/>
+<kw name="Log" library="BuiltIn">
+<arg>${row}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230917 01:48:44.480" endtime="20230917 01:48:44.480"/>
+</kw>
+<status status="NOT RUN" starttime="20230917 01:48:44.479" endtime="20230917 01:48:44.480"/>
+</iter>
+<status status="NOT RUN" starttime="20230917 01:48:44.479" endtime="20230917 01:48:44.480"/>
+</for>
+<kw name="Disconnect From Database">
+<status status="NOT RUN" starttime="20230917 01:48:44.481" endtime="20230917 01:48:44.481"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Done.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20230917 01:48:44.481" endtime="20230917 01:48:44.481"/>
+</kw>
+<status status="PASS" starttime="20230917 01:48:43.630" endtime="20230917 01:48:59.033"/>
+</kw>
+<status status="PASS" starttime="20230917 01:48:43.629" endtime="20230917 01:48:59.033"/>
+</test>
+<status status="PASS" starttime="20230917 01:48:43.590" endtime="20230917 01:48:59.035"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
