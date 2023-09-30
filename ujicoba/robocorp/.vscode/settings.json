@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "e:/rpa/robocorp/robotdasar/."
+    ],
+    "python.terminal.activateEnvironment": false
+}

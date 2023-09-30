@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "e:/rpa/rpa-python/roocorp-py/."
+    ],
+    "python.terminal.activateEnvironment": false
+}
